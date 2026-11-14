@@ -6,18 +6,18 @@
 /*   By: ajose-al <ajose-al@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 23:07:20 by ajose-al          #+#    #+#             */
-/*   Updated: 2026/10/30 10:11:20 by ajose-al         ###   ########.fr       */
+/*   Updated: 2026/11/11 11:28:32 by ajose-al         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
 	int	len;
 
 	len = 0;
-	while (str[len])
+	while (s[len])
 		len++;
 	return (len);
 }
