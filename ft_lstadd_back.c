@@ -6,7 +6,7 @@
 /*   By: ajose-al <ajose-al@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/14 21:43:49 by ajose-al          #+#    #+#             */
-/*   Updated: 2026/11/15 11:21:07 by ajose-al         ###   ########.fr       */
+/*   Updated: 2026/11/16 12:44:49 by ajose-al         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,18 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		current = current->next;
 	current->next = new;
 }
+
+//#include "visualizer/visualizer.h"
+//int	main(void)
+//{
+//	t_list	*lst;
+//	void	*plst;
+//	t_list	*new;
+//
+//	lst = ft_lstnew("hello");
+//	ft_visualizelst(lst);
+//	plst = &lst;
+//	new = ft_lstnew("world");
+//	ft_lstadd_back(plst, new);
+//	ft_visualizelst(lst);
+//}

@@ -6,7 +6,7 @@
 /*   By: ajose-al <ajose-al@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/14 19:54:06 by ajose-al          #+#    #+#             */
-/*   Updated: 2026/11/14 20:05:07 by ajose-al         ###   ########.fr       */
+/*   Updated: 2026/11/16 14:49:21 by ajose-al         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,14 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
+
+//#include "visualizer/visualizer.h"
+//int	main(void)
+//{
+//	t_list	*lst;
+//
+//	lst = ft_lstnew("hello");
+//	lst->next = ft_lstnew("world");
+//	lst->next->next = ft_lstnew(NULL);
+//	ft_visualizelst(lst);
+//}

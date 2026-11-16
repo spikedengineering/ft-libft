@@ -6,7 +6,7 @@
 /*   By: ajose-al <ajose-al@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/16 08:30:38 by ajose-al          #+#    #+#             */
-/*   Updated: 2026/11/16 08:46:03 by ajose-al         ###   ########.fr       */
+/*   Updated: 2026/11/16 13:43:57 by ajose-al         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,26 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		current = current->next;
 	}
 }
+
+//#include "visualizer/visualizer.h"
+//#include <stdio.h>
+//static void	ft_f(void *content)
+//{
+//	printf("%p\n", content);
+//}
+//int	main(void)
+//{
+//	t_list	*lst;
+//	char	*str0;
+//	char	*str1;
+//	char	*str2;
+//
+//	str0 = ft_strdup("hello");
+//	lst = ft_lstnew(str0);
+//	str1 = ft_strdup("world");
+//	lst->next = ft_lstnew(str1);
+//	str2 = ft_strdup("my name is");
+//	lst->next->next = ft_lstnew(str2);
+//	ft_visualizelst(lst);
+//	ft_lstiter(lst, ft_f);
+//}

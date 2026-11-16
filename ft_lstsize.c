@@ -6,7 +6,7 @@
 /*   By: ajose-al <ajose-al@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/14 21:08:54 by ajose-al          #+#    #+#             */
-/*   Updated: 2026/11/14 21:25:13 by ajose-al         ###   ########.fr       */
+/*   Updated: 2026/11/16 12:41:05 by ajose-al         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,15 @@ unsigned int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
+
+//#include "visualizer/visualizer.h"
+//#include <stdio.h>
+//int	main(void)
+//{
+//	t_list	*lst;
+//
+//	lst = ft_lstnew("hello");
+//	lst->next = ft_lstnew("world");
+//	ft_visualizelst(lst);
+//	printf("Linked list size: %d\n", ft_lstsize(lst));
+//}
