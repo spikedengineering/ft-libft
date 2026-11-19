@@ -6,7 +6,7 @@
 /*   By: ajose-al <ajose-al@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 22:38:18 by ajose-al          #+#    #+#             */
-/*   Updated: 2026/11/11 11:31:08 by ajose-al         ###   ########.fr       */
+/*   Updated: 2026/11/18 18:27:18 by ajose-al         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	ft_strlcpy(sub, str_to_cpy, alloc_size);
 	return (sub);
-	// WARNING: NEEDS MAIN
 }
+
+//int	main(void)
+//{
+//	char *s = "Alexandre Carvalho";
+//	char *alloc = ft_substr(s, 10, 8);
+//	ft_putstr_fd(s, 1);
+//	ft_putstr_fd("\n", 1);
+//	ft_putstr_fd(alloc, 1);
+//	free(alloc);
+//	ft_putstr_fd(alloc, 1);
+//}

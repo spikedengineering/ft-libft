@@ -6,7 +6,7 @@
 /*   By: ajose-al <ajose-al@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/16 18:58:31 by ajose-al          #+#    #+#             */
-/*   Updated: 2026/11/16 19:05:21 by ajose-al         ###   ########.fr       */
+/*   Updated: 2026/11/18 19:58:20 by ajose-al         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,10 @@ void	ft_putstr_fd(char *s, int fd)
 		write(fd, &s[i], 1);
 		i++;
 	}
-	// WARNING: NEEDS MAIN!
 }
+
+//int	main(void)
+//{
+//	char *s = "Hello world!";
+//	ft_putstr_fd(s, 1);
+//}

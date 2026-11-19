@@ -6,7 +6,7 @@
 /*   By: ajose-al <ajose-al@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/16 13:49:21 by ajose-al          #+#    #+#             */
-/*   Updated: 2026/11/16 14:01:42 by ajose-al         ###   ########.fr       */
+/*   Updated: 2026/11/18 18:44:28 by ajose-al         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,25 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	new[i] = '\0';
 	return (new);
-	// WARNING: NEEDS MAIN!
 }
+
+//char	f(unsigned int i, char c)
+//{
+//	(void)i;
+//	if (c >= 'a' && c <= 'z')
+//		return (c - 32);
+//	return (c);
+//}
+//
+//int	main(void)
+//{
+//	char *s = "Alexandre Carvalho";
+//	char *alloc = ft_strmapi(s, f);
+//
+//	ft_putstr_fd(s, 1);
+//	ft_putstr_fd("\n", 1);
+//	ft_putstr_fd(alloc, 1);
+//	ft_putstr_fd("\n", 1);
+//	free(alloc);
+//	ft_putstr_fd(alloc, 1);
+//}

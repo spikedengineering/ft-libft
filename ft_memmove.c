@@ -6,7 +6,7 @@
 /*   By: ajose-al <ajose-al@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 02:27:39 by ajose-al          #+#    #+#             */
-/*   Updated: 2026/11/11 11:45:01 by ajose-al         ###   ########.fr       */
+/*   Updated: 2026/11/19 19:12:11 by ajose-al         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,26 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	buffer[524288];
-	size_t			i;
-	// WARNING: ALGO NOT CORRECT! WHATS THAT BUFFER?
-	i = 0;
-	while (i < n)
+	char		*d;
+	const char	*s;
+	char		*lastd;
+	const char	*lasts;
+
+	if (!dest || !src)
+		return (NULL);
+	d = dest;
+	s = src;
+	if (dest < src)
+		while (n--)
+			*(d++) = *(s++);
+	else
 	{
-		buffer[i] = ((unsigned char *)src)[i];
-		i++;
-	}
-	i = 0;
-	while (i < n)
-	{
-		((unsigned char *)dest)[i] = buffer[i];
-		i++;
+		lastd = d + (n - 1);
+		lasts = s + (n - 1);
+		while (n--)
+		{
+			*(lastd--) = *(lasts--);
+		}
 	}
 	return (dest);
 }
