@@ -6,7 +6,7 @@
 /*   By: ajose-al <ajose-al@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/16 08:30:38 by ajose-al          #+#    #+#             */
-/*   Updated: 2026/11/16 13:43:57 by ajose-al         ###   ########.fr       */
+/*   Updated: 2026/11/20 22:39:12 by ajose-al         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	current = lst;
 	while (current)
 	{
-		if (current->content)
-			f(current->content);
+		f(current->content);
 		current = current->next;
 	}
 }
