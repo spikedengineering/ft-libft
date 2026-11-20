@@ -28,11 +28,12 @@ Delete Object Files and Executable Binary and Recompile
 ```bash
 make re
 ```
-#### Compile your Program with Libft after Building Libft
-> with `libft.a` and `libft.h` files inside your working directory.
+#### Import the Library into your C Program
 ```c
 #include "libft.h"
 ```
+#### Compile your Program with Libft after Building Libft
+> with `libft.a` and `libft.h` files inside your working directory.
 ```bash
 cc -Wall -Werror -Wextra your_program_file.c libft.a
 ```
