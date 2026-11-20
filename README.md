@@ -12,7 +12,7 @@ While working on the linked lists part of this project, I also created a visuali
 
 <summary>Example of Linked Lists Visualization</summary>
 
-# Linked list with 3 nodes represented with the visualizer.
+#### Linked list with 3 nodes represented with the visualizer.
 
 ```
 ┌──────────────────────┐
