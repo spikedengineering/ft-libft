@@ -8,39 +8,59 @@ This project consists of a C library that includes numerous general purpose func
 Working on each one of these functions was a very fun experience that not just allowed me to deeply understand C memory management and manipulation but confronted me with simple yet interesting exercises about string handling and linked lists. It was a very enriching experience that allowed me to generate more interest in the C Programming Language and how it really behaves.
 
 While working on the linked lists part of this project, I also created a visualizer for them. It can be found commented out on `ft_lstmap.c` file because the project delivery requirements do not allow for additional files delivered inside the project's repository.
+<details>
+
+<summary>Example of Linked Lists Visualization</summary>
 ```
 ┌──────────────────────┐
-│    0x00003c052340    │
+│    0x0000172672c0    │
 ├──────────────────────┤
 │       CONTENT        │
 │  ┌────────────────┐  │
-│  │ 0x00003c052320 ───────────────────────┐
+│  │ 0x0000172672a0 ───────────────────────┐
 │  └────────────────┘  │                   │
 │                      │        ┌──────────V───────────┐
-│         NEXT         │        │    0x00003c052320    │
+│         NEXT         │        │    0x0000172672a0    │
 │  ┌────────────────┐  │        ├──────────────────────┤
-│  │ 0x00003c052380 ───────┐    │      AS CHARS        │
+│  │ 0x000017267300 ───────┐    │      AS CHARS        │
 │  └────────────────┘  │   │    │  ┌────────────────┐  │
-└──────────────────────┘   │    │  │     HELLO      │  │
+└──────────────────────┘   │    │  │     hello      │  │
                            │    │  └────────────────┘  │
             ┌──────────────┘    └──────────────────────┘
             │
 ┌───────────V──────────┐
-│    0x00003c052380    │
+│    0x000017267300    │
 ├──────────────────────┤
 │       CONTENT        │
 │  ┌────────────────┐  │
-│  │ 0x00003c052360 ───────────────────────┐
+│  │ 0x0000172672e0 ───────────────────────┐
 │  └────────────────┘  │                   │
 │                      │        ┌──────────V───────────┐
-│         NEXT         │        │    0x00003c052360    │
+│         NEXT         │        │    0x0000172672e0    │
+│  ┌────────────────┐  │        ├──────────────────────┤
+│  │ 0x000017267340 ───────┐    │      AS CHARS        │
+│  └────────────────┘  │   │    │  ┌────────────────┐  │
+└──────────────────────┘   │    │  │     world      │  │
+                           │    │  └────────────────┘  │
+            ┌──────────────┘    └──────────────────────┘
+            │
+┌───────────V──────────┐
+│    0x000017267340    │
+├──────────────────────┤
+│       CONTENT        │
+│  ┌────────────────┐  │
+│  │ 0x000017267320 ───────────────────────┐
+│  └────────────────┘  │                   │
+│                      │        ┌──────────V───────────┐
+│         NEXT         │        │    0x000017267320    │
 │  ┌────────────────┐  │        ├──────────────────────┤
 │  │      NULL      │  │        │      AS CHARS        │
 │  └────────────────┘  │        │  ┌────────────────┐  │
-└──────────────────────┘        │  │     WORLD      │  │
+└──────────────────────┘        │  │   my name is   │  │
                                 │  └────────────────┘  │
                                 └──────────────────────┘
 ```
+</details>
 
 Unfortunately, the 42 common core curriculum does not contain as many C projects anymore, but I plan to continue to use and maintain this library in the future so I continue my learning journey of writing everything from scratch, allowing me to harden my C programming capabilities and further understand each backbone implementation of the standard libraries.
 
