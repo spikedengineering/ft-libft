@@ -5,7 +5,7 @@ _This project has been created as part of the 42 curriculum by ajose-al._
 
 This project consists of a C library that includes numerous general purpose functions for my programs.
 
-Working on each one of these functions was a very fun experience that not just allowed me to deeply understand C memory management and manipulation but confronted me with simple yet interesting exercises about string manipulation and linked lists. It was a very enriching experience that allowed me to generate more interest in the C Programming Language and how it really behaves.
+Working on each one of these functions was a very fun experience that not just allowed me to deeply understand C memory management and manipulation but confronted me with simple yet interesting exercises about string handling and linked lists. It was a very enriching experience that allowed me to generate more interest in the C Programming Language and how it really behaves.
 
 While working on the linked lists part of this project, I also created a visualizer for them. It can be found commented out on `ft_strmap.c` file because the project delivery requirements do not allow for additional files delivered inside the project's repository.
 
