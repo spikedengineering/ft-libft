@@ -11,6 +11,9 @@ While working on the linked lists part of this project, I also created a visuali
 <details>
 
 <summary>Example of Linked Lists Visualization</summary>
+
+# Linked list with 3 nodes represented with the visualizer.
+
 ```
 ┌──────────────────────┐
 │    0x0000172672c0    │
