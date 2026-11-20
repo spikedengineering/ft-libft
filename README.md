@@ -28,7 +28,10 @@ make fclean
 make re
 ```
 ### Compile your Program with Libft after Building Libft
-> using `libft.a` and `libft.h` files.
+> with `libft.a` and `libft.h` files inside your working directory.
+```c
+#include "libft.h"
+```
 ```bash
 cc -Wall -Werror -Wextra your_program_file.c libft.a
 ```
